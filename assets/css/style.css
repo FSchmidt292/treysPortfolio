@@ -1,0 +1,15 @@
+* {
+    font-family: helvetica, sans-serif, arial;
+}
+:root{
+    --primary-bg-color: #d6dbb2;
+    --secondary-bg-colBor: #bcd8c1;
+    --primary-color: #8b575c;
+    --secondary-color: #c98986;
+    --accent-color: #f6bdd1;
+}
+
+header {
+    background-color: var(--accent-color);
+    display: flex;
+}
