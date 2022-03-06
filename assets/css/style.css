@@ -15,6 +15,14 @@
     display: flex;
 }
 
+.section-title{
+    font-style: italic;
+    font-size: 32px;
+    border-bottom: 3px solid;
+    text-align: center;
+    margin:0 auto 30px auto;
+}
+
 header h1 {
     display: flex;
     align-items: flex-start;
@@ -62,7 +70,6 @@ body {
     background-image: url("../images/bgimg.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
     display: flex;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -71,14 +78,29 @@ body {
     min-width: 100%;
     border: 1px solid var(--accent-color);
 }
+.hero img{
+    display: flex;
+    flex-wrap: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin: auto auto;
+    max-width: 100%
+}
 
 .bio {
     background-color: var(--secondary-bg-color);
     color: var(--primary-color);
-    flex-wrap: flex;
-    justify-content: left;
+    align-content: column;
     padding: 0 20px;
 }
+
+.bio p{
+    text-justify: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
 .bio h2{
     color: var(--secondary-color);
 }
