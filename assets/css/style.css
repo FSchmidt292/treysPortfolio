@@ -1,15 +1,84 @@
 * {
     font-family: helvetica, sans-serif, arial;
+    margin: 0;
+    box-sizing: border-box;
 }
 :root{
-    --primary-bg-color: #d6dbb2;
-    --secondary-bg-colBor: #bcd8c1;
-    --primary-color: #8b575c;
-    --secondary-color: #c98986;
-    --accent-color: #f6bdd1;
+    --primary-bg-color: #DDe0bd;
+    --secondary-bg-color: #d0d1ac;
+    --primary-color: #948b89;
+    --secondary-color: #726e75;
+    --accent-color: #b6a39e;
+}
+
+.flex-row{
+    display: flex;
+}
+
+header h1 {
+    display: flex;
+    align-items: flex-start;
 }
 
 header {
-    background-color: var(--accent-color);
+    background-color: var(--primary-bg-color);
+    padding: 15px 0px 15px 15px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--secondary-color);
+}
+
+header nav{
+    padding: 6px 10;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+header nav ul li a {
+    padding: 30px;
+    font-size: 1.5vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+html,
+body {
+    height:100%
+}
+
+.hero {
+    background-image: url("../images/bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    min-height: 50%;
+    min-width: 100%;
+    border: 1px solid var(--accent-color);
+}
+
+.bio {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    flex-wrap: flex;
+    justify-content: left;
+    padding: 0 20px;
+}
+.bio h2{
+    color: var(--secondary-color);
 }
