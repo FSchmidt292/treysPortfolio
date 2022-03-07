@@ -77,41 +77,37 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    min-height: 50%;
-    min-width: 100%;
+    min-width: 10%;
     border: 1px solid var(--accent-color);
 }
 .hero img{
     display: flex;
-    flex-wrap: flex;
     align-self: center;
-    justify-content: space-between;
     margin: auto auto;
-    max-width: 100%
+    width: 356px;
 }
 
-.bio {
+#bio {
     background-color: var(--secondary-bg-color);
     color: var(--primary-color);
     align-content: column;
     padding: 0 20px;
 }
 
-.bio p{
+#bio p{
     text-justify: center;
     text-align: center;
     margin: 0 auto;
     width: 75%;
 }
 
-.bio h2{
+#bio h2{
     color: var(--secondary-color);
 }
 
-.projects{
+#projects{
     background-color: var(--primary-bg-color);
     color: var(--primary-color);
     text-decoration: none;
@@ -119,7 +115,7 @@ body {
     
 }
 
-.projects h2{
+#projects h2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,25 +125,58 @@ body {
 .proj-container{
    display: flex;
    justify-content: center;
+   
 }
 
 .run-buddy{
     border: 5px solid var(--accent-color);
-    min-height: 200px;
     max-height: 200px;
     max-width: 450;
     display: flex;
+    align-items: column;
+    justify-content: space-between;
 }
 
 .horiseon{
     border: 5px solid var(--accent-color);
-    min-height: 200px;
     max-height: 200px;
     display: flex;
+    align-items: column;
+    justify-content: space-between;
     max-width: 450px;
 }
 
-.contact{
+#coninf {
+    padding: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color:var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.contact {
     background-color: var(--secondary-bg-color);
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    display: block;
+
+}
+
+
+
+#contact-info{
+    display: flex;
+    justify-content: space-around;
+    background-color:var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.flex-item{
+    text-align: center;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 30px 30px 30px 30px;
 }
