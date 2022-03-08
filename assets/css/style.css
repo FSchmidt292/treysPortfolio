@@ -64,6 +64,10 @@ header nav ul li a {
     align-items: end;
 }
 
+header nav ul li a:hover {
+    color: black;
+}
+
 html,
 body {
     height:100%;
@@ -133,8 +137,20 @@ body {
     max-height: 200px;
     max-width: 450;
     display: flex;
-    align-items: column;
     justify-content: space-between;
+}
+
+.run-buddy a{
+    color: var(--primary-color);
+    display: block;
+}
+
+.run-buddy img{
+    width: 55%;
+}
+
+.run-buddy a:hover{
+    color: black;
 }
 
 .horiseon{
@@ -144,6 +160,21 @@ body {
     align-items: column;
     justify-content: space-between;
     max-width: 450px;
+    flex-wrap: wrap;
+}
+
+.horiseon a{
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horiseon a:hover{
+    color: black;
+}
+
+.horiseon img{
+    width: 60%;
 }
 
 #coninf {
@@ -161,8 +192,6 @@ body {
 
 }
 
-
-
 #contact-info{
     display: flex;
     justify-content: space-around;
@@ -179,4 +208,17 @@ footer{
     background-color: var(--accent-color);
     color: var(--primary-color);
     padding: 30px 30px 30px 30px;
+}
+
+
+@media screen and (max-width: 775px){
+
+    #header nav ul li a{
+        font-size: 3vw;
+}
+
+    .projects{
+        display:block;
+}
+
 }
