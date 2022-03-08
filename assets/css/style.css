@@ -138,6 +138,7 @@ body {
     max-width: 450;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
 }
 
 .run-buddy a{
